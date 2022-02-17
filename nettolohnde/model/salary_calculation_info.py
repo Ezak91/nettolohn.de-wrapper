@@ -9,6 +9,7 @@ from nettolohnde.enum.pension_insurance import PensionInsurance
 from nettolohnde.enum.state import State
 from nettolohnde.enum.tax_class import TaxClass
 from nettolohnde.enum.unemployment_insurance import UnemploymentInsurance
+from nettolohnde.enum.weekly_working_hours import WeeklyWorkingHours
 
 
 class SalaryCalculationInfos:
@@ -30,6 +31,7 @@ class SalaryCalculationInfos:
         age: Age,
         pension_insurance: PensionInsurance,
         unemployment_insurance: UnemploymentInsurance,
+        weekly_working_hours: WeeklyWorkingHours,
         tax_factor: Decimal = None,
         monthly_premium_phi: Decimal = None,
         employer_participation_phi: bool = None,
@@ -50,6 +52,7 @@ class SalaryCalculationInfos:
         self.age = age
         self.pension_insurance = pension_insurance
         self.unemployment_insurance = unemployment_insurance
+        self.weekly_working_hours = weekly_working_hours
         self.tax_factor = tax_factor
         self.monthly_premium_phi = monthly_premium_phi
         self.employer_participation_phi = employer_participation_phi
