@@ -39,6 +39,33 @@ class SalaryCalculationInfos:
         health_insurance_rate: Decimal = None,
         child_allowance: ChildAllowance = None,
     ):
+        """The info to calculate your net salary # noqa: D301
+
+        Args:
+            gross_wage (Decimal): your gross wage
+            billing_period (BillingPeriod): billing period (month or year)
+            company_pension_plan_month (Decimal): company pension plan
+            pecuniary_advantage (Decimal): pecuniary advantage
+            accounting_year (int): the accounting year_
+            tax_allowance_per_year (Decimal): tax allowance per year
+            tax_class (TaxClass): the tax class
+            church_tax (bool): pay church tax
+            state (State): the state
+            health_insurance (HealthInsurance): the healts insurance
+            have_children (bool): have children
+            age (Age): age of the employee
+            pension_insurance (PensionInsurance): pension insurance
+            unemployment_insurance (UnemploymentInsurance): unemployment \
+            insurance
+            weekly_working_hours (WeeklyWorkingHours): weekly working hours
+            salaries_per_year (SalariesPerYear): number of salaries per year
+            tax_factor (Decimal, optional): _description_. Defaults to None.
+            monthly_premium_phi (Decimal, optional): monthly pemium phi
+            employer_participation_phi (bool, optional): employer \
+            participation phi.
+            health_insurance_rate (Decimal, optional): health insurance rate
+            child_allowance (ChildAllowance, optional): child allowance
+        """
         self.gross_wage = gross_wage
         self.billing_period = billing_period
         self.company_pension_plan_month = company_pension_plan_month
@@ -60,3 +87,6 @@ class SalaryCalculationInfos:
         self.employer_participation_phi = employer_participation_phi
         self.health_insurance_rate = health_insurance_rate
         self.child_allowance = child_allowance
+
+        def test():
+            """"""
