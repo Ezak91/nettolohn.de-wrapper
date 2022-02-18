@@ -87,6 +87,3 @@ class SalaryCalculationInfos:
         self.employer_participation_phi = employer_participation_phi
         self.health_insurance_rate = health_insurance_rate
         self.child_allowance = child_allowance
-
-        def test():
-            """"""
