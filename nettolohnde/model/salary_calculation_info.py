@@ -1,4 +1,3 @@
-from __future__ import unicode_literals
 from decimal import Decimal
 
 from nettolohnde.enum.age import Age
@@ -6,6 +5,7 @@ from nettolohnde.enum.billing_period import BillingPeriod
 from nettolohnde.enum.child_allowance import ChildAllowance
 from nettolohnde.enum.health_insurance import HealthInsurance
 from nettolohnde.enum.pension_insurance import PensionInsurance
+from nettolohnde.enum.salaries_per_year import SalariesPerYear
 from nettolohnde.enum.state import State
 from nettolohnde.enum.tax_class import TaxClass
 from nettolohnde.enum.unemployment_insurance import UnemploymentInsurance
@@ -32,6 +32,7 @@ class SalaryCalculationInfos:
         pension_insurance: PensionInsurance,
         unemployment_insurance: UnemploymentInsurance,
         weekly_working_hours: WeeklyWorkingHours,
+        salaries_per_year: SalariesPerYear,
         tax_factor: Decimal = None,
         monthly_premium_phi: Decimal = None,
         employer_participation_phi: bool = None,
@@ -53,6 +54,7 @@ class SalaryCalculationInfos:
         self.pension_insurance = pension_insurance
         self.unemployment_insurance = unemployment_insurance
         self.weekly_working_hours = weekly_working_hours
+        self.salaries_per_year = salaries_per_year
         self.tax_factor = tax_factor
         self.monthly_premium_phi = monthly_premium_phi
         self.employer_participation_phi = employer_participation_phi
