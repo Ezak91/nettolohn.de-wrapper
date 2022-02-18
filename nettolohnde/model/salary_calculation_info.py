@@ -39,7 +39,7 @@ class SalaryCalculationInfos:
         health_insurance_rate: Decimal = None,
         child_allowance: ChildAllowance = None,
     ):
-        """The info to calculate your net salary # noqa: D301
+        """The info to calculate your net salary
 
         Args:
             gross_wage (Decimal): your gross wage
