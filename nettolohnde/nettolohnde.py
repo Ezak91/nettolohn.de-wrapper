@@ -1,4 +1,6 @@
 import requests
 
-def calculate_net():
+from nettolohnde.model.salary_calculation_info import SalaryCalculationInfos
+
+def calculate_net(salary_calculation_info: SalaryCalculationInfos):
     
