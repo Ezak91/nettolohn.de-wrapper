@@ -12,7 +12,7 @@ from nettolohnde.enum.unemployment_insurance import UnemploymentInsurance
 from nettolohnde.enum.weekly_working_hours import WeeklyWorkingHours
 
 
-class SalaryCalculationInfos:
+class SalaryCalculationInfo:
 
     # default constructor
     def __init__(
